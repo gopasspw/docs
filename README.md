@@ -1,5 +1,7 @@
 # gopass website
 
+**This document contains the static website sources for gopass and instructions for contributors on how to create new releases**.
+
 ## Releasing gopass
 
 ### Overview
