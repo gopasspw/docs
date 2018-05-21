@@ -1,0 +1,27 @@
+<nav class="gopass__navbar navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+	<div class="container gopass__navbar__container">
+		<a class="navbar-brand" href="{{ .Site.BaseURL }}">
+			<img src="{{ .Site.BaseURL }}img/gopass_gopher-sm.png" alt="gopass Gopher" class="gopass__navbar__gopher">
+			{{ .Site.Params.Meta.Title }}
+			<span class="text-muted hidden-xs-down">
+				- {{ .Site.Params.Meta.Description }}
+			</span>
+		</a>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav ml-auto">
+			{{ $currentNode := . }}
+			{{ range .Site.Menus.main }}
+			<li class="nav-item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}}">
+				<a class="nav-link" href="{{.URL}}">
+					{{ .Pre }}
+					{{ .Name }}
+				</a>
+			</li>
+			{{end}}
+		</ul>
+	</div>
+</nav>

@@ -1,0 +1,187 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+
+<section class="container gopass__hero">
+	<div class="row gopass__hero__row">
+		<div class="col-8 offset-2 col-sm-4 offset-sm-0 text-center gopass__hero__logo">
+			<div class="gopass__gopher-tilt">
+				<img src="{{ .Site.BaseURL }}gopher/background.png" alt="gopass Gopher" class="body">
+				<img src="{{ .Site.BaseURL }}gopher/nose.png" alt="gopass Gopher" class="nose">
+				<img src="{{ .Site.BaseURL }}gopher/eyes.png" alt="gopass Gopher" class="eyes">
+				<img src="{{ .Site.BaseURL }}gopher/lock.png" alt="gopass Gopher" class="lock">
+			</div>
+		</div>
+		<div class="col-12 col-sm-8 gopass__hero__text pb-5">
+			<h1 class="mt-0">
+				gopass
+			</h1>
+			<p>
+				gopass is a simple but powerful password manager for your terminal.
+			</p>
+			<a href="#install" class="btn btn-primary mb-2">
+				<i class="fa fa-download"></i> Install
+			</a>
+			<a href="{{ .Site.BaseURL }}docs" class="btn btn-info mb-2">
+				<i class="fa fa-book"></i> Docs
+			</a>
+			<a href="https://github.com/justwatchcom/gopass" target="_github" class="btn btn-secondary mb-2">
+				<i class="fa fa-github"></i> GitHub
+			</a>
+			<a href="https://twitter.com/intent/tweet?text=gopass+is+a+simple+but+powerful+password+manager+for+your+terminal.+%23gopass&url=https://justwatch.com/gopass"
+				target="_twitter" class="btn btn-secondary mb-2">
+				<i class="fa fa-twitter"></i> Tweet
+			</a>
+		</div>
+	</div>
+</section>
+
+<div class="gopass__demo mb-5">
+	<div class="container pt-5 pb-5">
+		<h2 id="demo">
+			Demo
+		</h2>
+		<script type='text/javascript' src='https://asciinema.org/a/101688.js' id='asciicast-101688' data-preload='1' data-loop='1' data-autoplay='0' data-speed='1' data-size='small' async></script>
+	</div>
+</div>
+
+<section class="container mb-5">
+	<div class="gopass__content">
+		<h2 id="features">
+			Features
+		</h2>
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4>
+					<i class="fa fa-2x fa-plug" aria-hidden="true"></i><br><br>
+					100% API-compatible to <a href="https://www.passwordstore.org" target="_blank">pass</a>
+				</h4>
+				<p>Every other app will work with the basics of gopass, too. Just jump in with your existing setup!</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4>
+					<i class="fa fa-2x fa-git" aria-hidden="true"></i><br><br>
+					git by default
+				</h4>
+				<p>
+					We initialize a git repository in your store by default.
+					Additionally we automatically pull and push if you write to the store.
+				</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4>
+					<i class="fa fa-2x fa-hdd-o" aria-hidden="true"></i><br><br>
+					Support for multiple stores
+				</h4>
+				<p>
+					Out of the box we support not only the common default store,
+					but you can add as many other stores, so-called <i>mounts</i>, as you like.
+				</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4>
+					<i class="fa fa-2x fa-users" aria-hidden="true"></i><br><br>
+					Easier management of recipients
+				</h4>
+				<p>
+					We prompt you to verify the recipients you're about to encrypt for
+					by default, so you can be sure to always target the right people.
+				</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4>
+					<i class="fa fa-2x fa-apple" aria-hidden="true"></i>
+					<i class="fa fa-2x fa-android" aria-hidden="true"></i>
+					<i class="fa fa-2x fa-chrome" aria-hidden="true"></i>
+					<i class="fa fa-2x fa-firefox" aria-hidden="true"></i>
+					<br><br>
+					Compatible with iOS, Android, Chrome, Firefox apps
+				</h4>
+				<p>
+					Because we're compatible with pass there are other projects out
+					there that you can use to complement gopass on other platforms.
+				</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4>
+					<i class="fa fa-2x fa-database" aria-hidden="true"></i><br><br>
+					Store binary data
+				</h4>
+				<p>
+					With gopass you can store more than just simple passwords.
+					You are able to store any kind of data as binary to the password store.
+					<br>
+					<i class="text-muted">Coming soon!</i>
+				</p>
+			</div>
+		</div>
+
+		<h2 id="install">
+			Install
+		</h2>
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#install-linux" role="tab">
+					<i class="fa fa-linux"></i> Linux
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#install-macos" role="tab">
+					<i class="fa fa-apple"></i> macOS
+				</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="install-linux" role="tabpanel">
+				<h3>
+					Debian and Ubuntu
+				</h3>
+        <pre><code>wget https://www.justwatch.com/gopass/releases/{{ .Site.Params.main.currentVersion }}/gopass-{{ .Site.Params.main.currentVersion }}-linux-amd64.deb
+sudo dpkg -i gopass-{{ .Site.Params.main.currentVersion }}-linux-amd64.deb</code></pre>
+				<h3>
+					ArchLinux
+				</h3>
+				<pre><code>pacaur -S gopass</code></pre>
+				<h3>
+					Gentoo
+				</h3>
+				<pre>
+<code>
+layman -a go-overlay
+emerge -av gopass
+</code>
+        </pre>
+			</div>
+			<div class="tab-pane" id="install-macos" role="tabpanel">
+
+				<h3>
+					Homebrew
+				</h3>
+        <pre>
+<code>brew install gopass</code>
+        </pre>
+
+				<h3>
+					Binary Download
+				</h3>
+				<p>
+        <a href="/gopass/releases/{{ .Site.Params.main.currentVersion }}/gopass-{{ .Site.Params.main.currentVersion }}-darwin-amd64.tar.gz" class="btn btn-primary">
+						<i class="fa fa-download"></i> Download
+						<small>
+							({{ .Site.Params.main.currentVersion }})
+						</small>
+					</a>
+				</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<h3>Other Operating Systems</h3>
+    Please visit <a href="https://www.justwatch.com/gopass/releases/{{ .Site.Params.main.currentVersion }}/" target="_releases">https://www.justwatch.com/gopass/releases/{{ .Site.Params.main.currentVersion }}/</a> for a list of binary releases
+
+		<h3>From Source</h3>
+    Run <code>go get {{ .Site.Params.main.repo }}</code> to install gopass from source.
+	</div>
+</section>
+
+{{ partial "footer.html" . }}

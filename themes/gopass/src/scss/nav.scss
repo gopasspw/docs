@@ -1,0 +1,32 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+.gopass {
+    &__navbar {
+        @media (max-width: map-get($grid-breakpoints, sm)) {
+            background-color: $bg-color-footer-mobile;
+            &__container {
+                width: 100%;
+            }
+            .navbar-toggler-right {
+                right: 0;
+            }
+        }
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            background-color: $bg-color-footer;
+        }
+        &__gopher {
+            width: 19px;
+            height: 30px;
+            margin-right: 4px;
+        }
+        .nav-item {
+            margin-right: 1em;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+        a {
+            color: $link-color-footer;
+        }
+    }
+}

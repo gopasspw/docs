@@ -1,0 +1,51 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+.gopass {
+    &__content-container {
+        // Navbar height.
+        @media (max-width: map-get($grid-breakpoints, sm)) {
+            margin-top: 60px;
+        }
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            margin-top: 80px;
+        }
+    }
+    &__demo {
+        background-color: #121314;
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #fff;
+        }
+    }
+    &__content {
+        h1,
+        h2 {
+            border-bottom: 1px solid #bbb;
+        }
+        &--single {
+            h3,
+            h4 {
+                border-bottom: 1px dotted #ccc;
+            }
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            a {
+                word-break: normal;
+            }
+        }
+        a {
+            word-break: break-all;
+        }
+        pre {
+            background-color: #000;
+            color: #fff;
+            padding: 6px (2*6px);
+            border-radius: 6px;
+        }
+    }
+}

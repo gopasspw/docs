@@ -1,0 +1,22 @@
+@import 'variables';
+.gopass {
+    &__footer {
+        box-shadow: inset 0px 21px 62px -30px rgba(0, 0, 0, 0.9);
+        background-color: #454545;
+        color: #999;
+        h4 {
+            color: #999;
+        }
+        hr {
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        a {
+            color: $link-color-footer;
+            &:hover,
+            &:active,
+            &:focus {
+                color: darken($link-color-footer, 10%);
+            }
+        }
+    }
+}

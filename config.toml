@@ -1,0 +1,95 @@
+# Site settings
+baseurl = "/"
+author = "Gopass Authors"
+title = "gopass - the team password manager"
+languageCode = "en-us"
+theme = "gopass" 
+googleAnalytics = ""
+enableRobotsTXT = true
+SectionPagesMenu = ["main", "social"]
+
+[params.meta]
+title = "gopass"
+description = "the team password manager"
+keywords = "gopass go golang password manager open-source gpg"
+
+[params.main]
+currentVersion = "1.6.10"
+repo = "github.com/gopasspw/gopass"
+
+[params.footer]
+email = "gopass@gopass.pw"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 10
+
+[[menu.main]]
+name = "Docs"
+url = "/docs"
+weight = 20
+
+[[menu.main]]
+name = "FAQ"
+url = "/faq"
+weight = 30
+
+[[menu.main]]
+name = "GitHub"
+url = "https://github.com/gopasspw/gopass"
+weight = 40
+pre = "<i class=\"fa fa-github\"></i>"
+post = ""
+hrefTargetBlank = true
+
+[[menu.footer]]
+name = "Announcement"
+url = "https://www.justwatch.com/blog/post/announcing-gopass/"
+weight = 10
+hrefTargetBlank = true
+
+[[menu.footer]]
+name = "Home"
+url = "/"
+weight = 20
+
+[[menu.footer]]
+name = "Docs"
+url = "/docs"
+weight = 30
+
+[[menu.footer]]
+name = "FAQ"
+url = "/faq"
+weight = 40
+
+[[menu.justwatch]]
+weight = 10
+name = "JustWatch"
+url = "http://www.justwatch.com"
+
+[[menu.justwatch]]
+weight = 20
+name = "Github"
+url = "https://github.com/gopasspw/gopass"
+
+[[menu.justwatch]]
+weight = 30
+name = "Twitter"
+url = "http://twitter.com/gopasspw"
+
+[[menu.justwatch]]
+weight = 40
+name = "Facebook"
+url  = "https://www.facebook.com/watchjust"
+
+[[menu.social]]
+name = "Twitter"
+url = "http://twitter.com/gopasspw"
+weight = 30
+
+[[menu.justwatch]]
+weight = 50
+name = "LinkedIn"
+url  = "https://www.linkedin.com/company/justwatch"

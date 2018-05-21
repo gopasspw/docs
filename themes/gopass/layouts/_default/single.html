@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+<section class="container gopass__content-container">
+	<div class="gopass__content gopass__content--single">
+		<div class="row">
+			<div class="col-12 col-lg-8 offset-lg-2">
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+</section>
+{{ partial "footer.html" . }}

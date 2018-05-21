@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Gopass"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+description = "Official theme for the gopass project site."
+homepage = "http://justwatch.com/gopass"
+tags = ["gopass", "go"]
+features = ["", ""]
+min_version = 0.18
+
+[author]
+  name = "JustWatch GmbH"
+  homepage = "https://www.justwatch.com"

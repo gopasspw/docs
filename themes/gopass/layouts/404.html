@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+
+
+<section class="container gopass__content-container gopass__hero">
+	<div class="row gopass__hero__row pt-3">
+		<div class="col-8 offset-2 col-sm-4 offset-sm-0 text-center gopass__hero__logo">
+			<div class="gopass__gopher-tilt">
+				<img src="{{ .Site.BaseURL }}gopher/background.png" alt="gopass Gopher">
+				<img src="{{ .Site.BaseURL }}gopher/nose.png" alt="gopass Gopher" style="transform: translateZ(10px)">
+				<img src="{{ .Site.BaseURL }}gopher/eyes.png" alt="gopass Gopher" style="transform: translateZ(20px)">
+				<img src="{{ .Site.BaseURL }}gopher/lock.png" alt="gopass Gopher" style="transform: translateZ(15px)">
+			</div>
+		</div>
+		<div class="col-12 col-sm-8 gopass__hero__text pb-5">
+			<h1 class="mt-0">
+				Oops, page not found. :(
+			</h1>
+			<p>
+				gopass is a simple but powerful password manager for your terminal.
+			</p>
+		</div>
+	</div>
+</section>
+
+{{ partial "footer.html" . }}

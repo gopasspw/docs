@@ -1,0 +1,15 @@
+// Fonts.
+$headings-font-family: 'Inconsolata';
+$font-family-base: 'OpenSans';
+// Colors.
+$jw-gold: #fcb500;
+$gopass-gopher-blue: #6BD7E5;
+$gopass-gopher-blue-dark: #0042FC;
+$body-bg: #eee;
+// Bootstrap Adjustments.
+$brand-primary: $jw-gold;
+$brand-info: $gopass-gopher-blue-dark;
+$link-color: $gopass-gopher-blue-dark;
+$bg-color-footer: rgba(255, 255, 255, 0.95);
+$bg-color-footer-mobile: rgba(255, 255, 255, 1.0);
+$link-color-footer: $jw-gold;

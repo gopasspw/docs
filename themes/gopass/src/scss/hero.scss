@@ -1,0 +1,61 @@
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+.gopass {
+    &__hero {
+        @media (max-width: map-get($grid-breakpoints, sm)) {
+            margin-top: 70px;
+        }
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            height: 100vh;
+            max-height: 800px;
+        }
+        &__row {
+            height: 100%;
+        }
+        &__logo {
+            align-self: center;
+        }
+        &__text {
+            align-self: center;
+            @media (max-width: map-get($grid-breakpoints, sm)) {
+                text-align: center;
+            }
+        }
+    }
+    &__gopher-tilt {
+        position: relative;
+        top: 0;
+        left: 0;
+        @media (max-width: map-get($grid-breakpoints, sm)) {
+            height: 260px;
+            img {
+                max-height: 260px;
+                width: auto;
+            }
+        }
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            height: 372px;
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+        /* TODO: Can this be variable?! */
+        transform-style: preserve-3d;
+        img {
+            position: absolute;
+            left: 50%;
+            &.body {
+                transform: translateX(-50%);
+            }
+            &.nose {
+                transform: translateX(-50%) translateZ(10px);
+            }
+            &.eyes {
+                transform: translateX(-50%) translateZ(20px);
+            }
+            &.lock {
+                transform: translateX(-50%) translateZ(15px);
+            }
+        }
+    }
+}
