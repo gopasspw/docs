@@ -24,7 +24,7 @@
 			<a href="{{ .Site.BaseURL }}docs" class="btn btn-info mb-2">
 				<i class="fa fa-book"></i> Docs
 			</a>
-			<a href="https://github.com/justwatchcom/gopass" target="_github" class="btn btn-secondary mb-2">
+			<a href="https://github.com/gopasspw/gopass" target="_github" class="btn btn-secondary mb-2">
 				<i class="fa fa-github"></i> GitHub
 			</a>
 			<a href="https://twitter.com/intent/tweet?text=gopass+is+a+simple+but+powerful+password+manager+for+your+terminal.+%23gopass&url=https://justwatch.com/gopass"
@@ -135,7 +135,7 @@
 				<h3>
 					Debian and Ubuntu
 				</h3>
-        <pre><code>wget https://www.justwatch.com/gopass/releases/{{ .Site.Params.main.currentVersion }}/gopass-{{ .Site.Params.main.currentVersion }}-linux-amd64.deb
+                <pre><code>wget https://www.justwatch.com/gopass/releases/{{ .Site.Params.main.currentVersion }}/gopass-{{ .Site.Params.main.currentVersion }}-linux-amd64.deb
 sudo dpkg -i gopass-{{ .Site.Params.main.currentVersion }}-linux-amd64.deb</code></pre>
 				<h3>
 					ArchLinux
@@ -144,22 +144,15 @@ sudo dpkg -i gopass-{{ .Site.Params.main.currentVersion }}-linux-amd64.deb</code
 				<h3>
 					Gentoo
 				</h3>
-				<pre>
-<code>
-layman -a go-overlay
-emerge -av gopass
-</code>
-        </pre>
+				<pre><code>layman -a go-overlay
+emerge -av gopass</code></pre>
 			</div>
 			<div class="tab-pane" id="install-macos" role="tabpanel">
 
 				<h3>
 					Homebrew
 				</h3>
-        <pre>
-<code>brew install gopass</code>
-        </pre>
-
+                <pre><code>brew install gopass</code></pre>
 				<h3>
 					Binary Download
 				</h3>
