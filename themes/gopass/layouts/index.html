@@ -135,7 +135,7 @@
 				<h3>
 					Debian and Ubuntu
 				</h3>
-                <pre><code>wget https://www.justwatch.com/gopass/releases/{{ .Site.Params.main.currentVersion }}/gopass-{{ .Site.Params.main.currentVersion }}-linux-amd64.deb
+                <pre><code>https://dl.bintray.com/gopasspw/gopass/pool/main/g/gopass/gopass-{{ .Site.Params.main.currentVersion }}-linux-amd64.deb
 sudo dpkg -i gopass-{{ .Site.Params.main.currentVersion }}-linux-amd64.deb</code></pre>
 				<h3>
 					ArchLinux
@@ -170,7 +170,7 @@ emerge -av gopass</code></pre>
 		<hr>
 
 		<h3>Other Operating Systems</h3>
-    Please visit <a href="https://www.justwatch.com/gopass/releases/{{ .Site.Params.main.currentVersion }}/" target="_releases">https://www.justwatch.com/gopass/releases/{{ .Site.Params.main.currentVersion }}/</a> for a list of binary releases
+    Please visit <a href="https://github.com/gopasspw/gopass/releases/tag/v{{ .Site.Params.main.currentVersion }}/" target="_releases">https://github.com/gopasspw/gopass/releases/tag/v{{ .Site.Params.main.currentVersion }}/</a> for a list of binary releases
 
 		<h3>From Source</h3>
     Run <code>go get {{ .Site.Params.main.repo }}</code> to install gopass from source.
