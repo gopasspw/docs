@@ -37,8 +37,9 @@ repo except `release-X.Y` branches.
 
 ```bash
 cd $GOPATH/src/github.com/gopasspw/gopass
-# update the CHANGELOG.md
-echo v1.X.Y > VERSION
+go build && make tests && make test-integration
+# update CHANGELOG.md and VERSION in ONE COMMIT
+git commit -am'Tag X.Y.Z+1'
 git tag -s v1.X.Y
 make completion
 goreleaser --skip-publish
