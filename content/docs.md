@@ -89,6 +89,7 @@ gopass was initially started by Matthias Loibl and Dominik Schulz. The majority 
 
 ## Further Documentation
 
+* [Features and usage](https://github.com/gopasspw/gopass/blob/master/docs/features.md)
 * [Security, Known Limitations, and Caveats](https://github.com/gopasspw/gopass/blob/master/docs/security.md)
 * [Configuration](https://github.com/gopasspw/gopass/blob/master/docs/config.md)
 * [FAQ](https://github.com/gopasspw/gopass/blob/master/docs/faq.md)
